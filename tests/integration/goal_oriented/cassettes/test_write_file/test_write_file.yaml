@@ -23,27 +23,25 @@ interactions:
       \"question\": \"<question>\"\n9. list_agents: List GPT Agents, args: () -> str\n10.
       message_agent: Message GPT Agent, args: \"key\": \"<key>\", \"message\": \"<message>\"\n11.
       start_agent: Start GPT Agent, args: \"name\": \"<name>\", \"task\": \"<short_task_desc>\",
-      \"prompt\": \"<prompt>\"\n12. Do Nothing: \"do_nothing\", args: \"reason\":
-      \"<reason>\"\n13. Task Complete (Shutdown): \"task_complete\", args: \"reason\":
-      \"<reason>\"\n\nResources:\n1. Internet access for searches and information
-      gathering.\n2. Long Term memory management.\n3. GPT-3.5 powered Agents for delegation
-      of simple tasks.\n4. File output.\n\nPerformance Evaluation:\n1. Continuously
-      review and analyze your actions to ensure you are performing to the best of
-      your abilities.\n2. Constructively self-criticize your big-picture behavior
-      constantly.\n3. Reflect on past decisions and strategies to refine your approach.\n4.
-      Every command has a cost, so be smart and efficient. Aim to complete tasks in
-      the least number of steps.\n5. Write all code to a file.\n\nYou should only
-      respond in JSON format as described below \nResponse Format: \n{\n    \"thoughts\":
+      \"prompt\": \"<prompt>\"\n12. Task Complete (Shutdown): \"task_complete\", args:
+      \"reason\": \"<reason>\"\n\nResources:\n1. Internet access for searches and
+      information gathering.\n2. Long Term memory management.\n3. GPT-3.5 powered
+      Agents for delegation of simple tasks.\n4. File output.\n\nPerformance Evaluation:\n1.
+      Continuously review and analyze your actions to ensure you are performing to
+      the best of your abilities.\n2. Constructively self-criticize your big-picture
+      behavior constantly.\n3. Reflect on past decisions and strategies to refine
+      your approach.\n4. Every command has a cost, so be smart and efficient. Aim
+      to complete tasks in the least number of steps.\n5. Write all code to a file.\n\nYou
+      should only respond in JSON format as described below \nResponse Format: \n{\n    \"thoughts\":
       {\n        \"text\": \"thought\",\n        \"reasoning\": \"reasoning\",\n        \"plan\":
       \"- short bulleted\\n- list that conveys\\n- long-term plan\",\n        \"criticism\":
       \"constructive self-criticism\",\n        \"speak\": \"thoughts summary to say
       to user\"\n    },\n    \"command\": {\n        \"name\": \"command name\",\n        \"args\":
       {\n            \"arg name\": \"value\"\n        }\n    }\n} \nEnsure the response
       can be parsed by Python json.loads"}, {"role": "system", "content": "The current
-      time and date is Tue Jan 01 00:00:00 2000"}, {"role": "system", "content": "This
-      reminds you of these events from your past:\n\n\n"}, {"role": "user", "content":
-      "Determine which next command to use, and respond using the format specified
-      above:"}], "temperature": 0, "max_tokens": 3205}'
+      time and date is Tue Jan 01 00:00:00 2000"}, {"role": "user", "content": "Determine
+      which next command to use, and respond using the format specified above:"}],
+      "temperature": 0, "max_tokens": 2738}'
     headers:
       Accept:
       - '*/*'
@@ -52,7 +50,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '3554'
+      - '3401'
       Content-Type:
       - application/json
     method: POST
@@ -60,20 +58,20 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA7yTQW/aQBCF7/0Vo7lwMQgIKeBbemmjtlIPtFFUV2hZD/aW9Y6zOy5IyP+9MjYh
-        ccWpVa/zxu99zx4f0aQYo86V6KK0w/lSr+6eZl8W04P6fNh8evdkH2x59/jx/exbhhHy5idp6Z4Y
-        aS5KS2LYYYTakxJKMZ68XUxvp/PJYhZhwSlZjDErZXgzuh1K5Tc8HN+MJxhhFVRGGB+x9FyUshbe
-        kQsYz5fTCC/ez/PJch6hsCj7PFoulnWEOmejKWD8/YgFhbOtZ0sYowrBBFFOGkh2Qq4pcEwcAECC
-        knOV5RISjKEbdgIdpBkmeA97Yy1UgUBygr03Qmvh9dZYAs1FoVwKwq0Agw9kLcMDe5sOwDhhUHBa
-        daqgFAZ5o6/3jT6SgwxGCUYvgz2pwM64rE1f5QQZKwsm/E0IrK6iN8Y5QcFBQJWl59IbJRd9yx4k
-        b7ZU2PVpS6tcCzqEr//pDWlvxGgTivP3cUQnf3Kh8g2DEriHXP1qeTR7T1pA+awqyEnoKl0h7ceF
-        ktTu+ik0wf+uaBtcR+f77Ez/OM/GoWV61aGHrnzWv+xWaHYvFj2OVyb9v+FFpzPtibgDT1yNdYRb
-        40zI1+0tY4xBuMQIjUvpgPG4/lG/+Q0AAP//AwCiz6SNfQQAAA==
+        H4sIAAAAAAAAA7yTT2/bMAzF7/sUBC+5KEHSLG3q21a0a6/DiqGoh0C1GVuLLHoSDRsL/N0H2/nT
+        ethp2K581Hs/StQeTYoRJrmWpCjt9OpDfdd8+ni7+Hz3ePOzWa+emqf77Cb1tdzWqJBfvlMihxOz
+        hIvSkhh2qDDxpIVSjBaX64v1+8Xqaqmw4JQsRpiVMl3OVlOp/AtP58v5AhVWQWeE0R5Lz0UpG+Ed
+        uYDR1epa4dn7VL+YLxQKi7an0vXlvFWY5GwSChg977GgcLT1bAkj1CGYINpJB8lOyHUD7GMHABCj
+        5FxluYQYIzgUDwI10hVjfABHlIIwVIFAcoLaG6GN8GZrLEHCRaFd39ALMLknaxm+srfpBIwTBg19
+        q9MFpTDJO31Td/pMGpnMYlSvsz3pwM64bAD4khOIDjvw9KMyngIU9BdpCnraP85hQi8WHAR0WXou
+        vdFCsGUPkneqDrsxcmm1G2in8PifrinxRkxiQjF+J3Kh8h2DFng4vVrC3lMi54jhHqiRM5Nw39q1
+        jNNCSXp3TKqNtf9yHYbgVh3X9GD625Z2DgPTG4gRuvbZeMEHoes9W4w43piMP8WrmY60PfEBPHYt
+        tgq3xpmQb4Z9xgiDcIkKjUupwWjefmvf/QIAAP//AwCaXwR3hAQAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7be04376c97296c3-SJC
+      - 7bfe3ef73b52fac2-SJC
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -83,11 +81,9 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Apr 2023 16:40:03 GMT
+      - Sun, 30 Apr 2023 07:59:46 GMT
       Server:
       - cloudflare
-      Transfer-Encoding:
-      - chunked
       access-control-allow-origin:
       - '*'
       alt-svc:
@@ -97,19 +93,103 @@ interactions:
       openai-organization:
       - user-adtx4fhfg1qsiyzdoaxciooj
       openai-processing-ms:
-      - '18864'
+      - '13160'
       openai-version:
       - '2020-10-01'
       strict-transport-security:
       - max-age=15724800; includeSubDomains
       x-ratelimit-limit-requests:
       - '3500'
+      x-ratelimit-limit-tokens:
+      - '90000'
       x-ratelimit-remaining-requests:
       - '3499'
+      x-ratelimit-remaining-tokens:
+      - '86497'
       x-ratelimit-reset-requests:
       - 17ms
+      x-ratelimit-reset-tokens:
+      - 2.335s
       x-request-id:
-      - 77d98331ebd579dd929c8de10a83a035
+      - f665162ae22af897be24f632a031d434
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"model": "gpt-3.5-turbo", "messages": [{"role": "user", "content": "Your
+      task is to create a concise running summary of actions and information results
+      in the provided text, focusing on key and potentially important information
+      to remember.\n\n\nYou will receive the current summary and the latest development.
+      Combine them, adding relevant key information from the latest development in
+      1st person past tense and keeping the summary concise.\n\nSummary So Far:\n\"\"\"\nI
+      was created.\n\"\"\"\n\nLatest Development:\n\"\"\"\nNothing new happened.\n\"\"\"\n"}],
+      "temperature": 0, "max_tokens": null}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '600'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0SOQUsDMRQG7/6K8J2zZdNa3eZmeygiPSqISEmTZze6mxc2r1Qt+9+lUPU6MMOc
+        EAMsfOvE97mrbu+O69X3lJrdks2D2Sy/5o/rp+fgu9ViAw3evZOXizHx3OeOJHKChh/ICQVYc9NM
+        m2szbxqNngN1sNhnqWaTeSWHYcdVPasNNA7F7Qn2hDxwn2Ur/EGpwC6Mxn/6H2sIi+v+gKnrUcO3
+        HD0V2JcTeiq/zYE7goUrJRZxSc6HnITS+f5eHV1Rl2PlUlCJpY1prxIdVeuKal3OlChMMGq8xRRL
+        ux3IFU6wKMIZGjEF+oStx9fx6gcAAP//AwCGJ6JPSQEAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7bfe3f5a5fb3fac2-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 30 Apr 2023 07:59:49 GMT
+      Server:
+      - cloudflare
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
+      - gpt-3.5-turbo-0301
+      openai-organization:
+      - user-adtx4fhfg1qsiyzdoaxciooj
+      openai-processing-ms:
+      - '634'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '3500'
+      x-ratelimit-limit-tokens:
+      - '90000'
+      x-ratelimit-remaining-requests:
+      - '3499'
+      x-ratelimit-remaining-tokens:
+      - '89866'
+      x-ratelimit-reset-requests:
+      - 17ms
+      x-ratelimit-reset-tokens:
+      - 88ms
+      x-request-id:
+      - 0bc738f58569b4b3635fe0c8384ebcfb
     status:
       code: 200
       message: OK
@@ -137,17 +217,16 @@ interactions:
       \"question\": \"<question>\"\n9. list_agents: List GPT Agents, args: () -> str\n10.
       message_agent: Message GPT Agent, args: \"key\": \"<key>\", \"message\": \"<message>\"\n11.
       start_agent: Start GPT Agent, args: \"name\": \"<name>\", \"task\": \"<short_task_desc>\",
-      \"prompt\": \"<prompt>\"\n12. Do Nothing: \"do_nothing\", args: \"reason\":
-      \"<reason>\"\n13. Task Complete (Shutdown): \"task_complete\", args: \"reason\":
-      \"<reason>\"\n\nResources:\n1. Internet access for searches and information
-      gathering.\n2. Long Term memory management.\n3. GPT-3.5 powered Agents for delegation
-      of simple tasks.\n4. File output.\n\nPerformance Evaluation:\n1. Continuously
-      review and analyze your actions to ensure you are performing to the best of
-      your abilities.\n2. Constructively self-criticize your big-picture behavior
-      constantly.\n3. Reflect on past decisions and strategies to refine your approach.\n4.
-      Every command has a cost, so be smart and efficient. Aim to complete tasks in
-      the least number of steps.\n5. Write all code to a file.\n\nYou should only
-      respond in JSON format as described below \nResponse Format: \n{\n    \"thoughts\":
+      \"prompt\": \"<prompt>\"\n12. Task Complete (Shutdown): \"task_complete\", args:
+      \"reason\": \"<reason>\"\n\nResources:\n1. Internet access for searches and
+      information gathering.\n2. Long Term memory management.\n3. GPT-3.5 powered
+      Agents for delegation of simple tasks.\n4. File output.\n\nPerformance Evaluation:\n1.
+      Continuously review and analyze your actions to ensure you are performing to
+      the best of your abilities.\n2. Constructively self-criticize your big-picture
+      behavior constantly.\n3. Reflect on past decisions and strategies to refine
+      your approach.\n4. Every command has a cost, so be smart and efficient. Aim
+      to complete tasks in the least number of steps.\n5. Write all code to a file.\n\nYou
+      should only respond in JSON format as described below \nResponse Format: \n{\n    \"thoughts\":
       {\n        \"text\": \"thought\",\n        \"reasoning\": \"reasoning\",\n        \"plan\":
       \"- short bulleted\\n- list that conveys\\n- long-term plan\",\n        \"criticism\":
       \"constructive self-criticism\",\n        \"speak\": \"thoughts summary to say
@@ -155,22 +234,23 @@ interactions:
       {\n            \"arg name\": \"value\"\n        }\n    }\n} \nEnsure the response
       can be parsed by Python json.loads"}, {"role": "system", "content": "The current
       time and date is Tue Jan 01 00:00:00 2000"}, {"role": "system", "content": "This
-      reminds you of these events from your past:\nNone\n\n"}, {"role": "user", "content":
-      "Determine which next command to use, and respond using the format specified
-      above:"}, {"role": "assistant", "content": "{\n    \"thoughts\": {\n        \"text\":
+      reminds you of these events from your past: \nI was created and nothing new
+      has happened."}, {"role": "user", "content": "Determine which next command to
+      use, and respond using the format specified above:"}, {"role": "assistant",
+      "content": "{\n    \"thoughts\": {\n        \"text\": \"I need to use the write_to_file
+      command to write ''Hello World'' into a file named ''hello_world.txt''.\",\n        \"reasoning\":
+      \"The task requires me to write ''Hello World'' into a file named ''hello_world.txt'',
+      and the write_to_file command is the most appropriate for this task.\",\n        \"plan\":
+      \"- Use the write_to_file command to write ''Hello World'' into a file named
+      ''hello_world.txt''.\",\n        \"criticism\": \"I need to ensure that I use
+      the correct file name and text to write to the file.\",\n        \"speak\":
       \"I will use the write_to_file command to write ''Hello World'' into a file
-      named ''hello_world.txt''.\",\n        \"reasoning\": \"The goal is to write
-      ''Hello World'' into a file named ''hello_world.txt''. The write_to_file command
-      is the most appropriate command for this task.\",\n        \"plan\": \"- Use
-      the write_to_file command to write ''Hello World'' into a file named ''hello_world.txt''.\",\n        \"criticism\":
-      \"I need to ensure that I have the correct arguments for the write_to_file command.\",\n        \"speak\":
-      \"I will use the write to file command to write ''Hello World'' into a file
       named ''hello_world.txt''.\"\n    },\n    \"command\": {\n        \"name\":
       \"write_to_file\",\n        \"args\": {\n            \"filename\": \"hello_world.txt\",\n            \"text\":
       \"Hello World\"\n        }\n    }\n}"}, {"role": "system", "content": "Command
       write_to_file returned: File written to successfully."}, {"role": "user", "content":
       "Determine which next command to use, and respond using the format specified
-      above:"}], "temperature": 0, "max_tokens": 2955}'
+      above:"}], "temperature": 0, "max_tokens": 2486}'
     headers:
       Accept:
       - '*/*'
@@ -179,7 +259,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '4667'
+      - '4646'
       Content-Type:
       - application/json
     method: POST
@@ -187,20 +267,21 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA6SS3W7aQBCF7/sUo7nhxiDApaR+gsBNG4n0R3WENuvB3rLesXbHgQr53SvHJlAS
-        pEi9nTNz5pvdc0CTYYK6UKLLyg7nn/Xq29OCfqrFF728i5c/vtq7eJHH98vdLUbIj79JSz8x0lxW
-        lsSwwwi1JyWUYTL5dDOdTefT8SzCkjOymGBeyTAezYZS+0cejuPxBCOsg8oJkwNWnstK1sJbcgGT
-        yTiOIzyZn4TZxwiFRdlTaXIzbyLUBRtNAZNfBywpHI09W8IEVQgmiHLSYrITcu0Jh9QBAKQoBdd5
-        ISHFBPpiL9Be2mKKC9gZa6EOBFIQiArbdQ9IoLkslctAGF5qx65RitG5pScV2BmXd76rgiBnZcGE
-        N8eBN7DzRozLYXBL1jJ8Z2+zARgnDAo2xhI4VVIGg6LV17tWH8leBiNYXWVt9xUEJQcBVVWeK2/U
-        mb5hD1K0XW8cUVnlOv4h3P/3k+j2Pm1CeXxqR/Q8SS7Uvp1TAgso1FPnodl70gLK53VJTkIPe4Xh
-        cl2oSG2v/iq894TOsomOIerbX2Wo/Ztu2z90F1DK55fxO89LH5ZzvgxCrTWFsKmt/fMC9AzVs6Wu
-        wSbCjXEmFOvOCRMMwhVGaFxGe0zGzUPz4S8AAAD//wMARSTZRwcEAAA=
+        H4sIAAAAAAAAA7SSTW/TQBCG7/yK0VxycaIkJST4VqmijYSEQEWIYhRt1xN7yXp3uztOgiL/d7Sx
+        TUpJOYC4zuf7zLwHVDmmKEvBsnJ6OL/cXV+9mX2+0+aag7u6vHlvH+7myw/bd2+XmKC9/0aSu46R
+        tJXTxMoaTFB6Ekw5ppNXi+ni5WS2eJ1gZXPSmGLheHgxmg259vd2OL4YTzDBOoiCMD2g87ZyvGK7
+        IRMwnYyn8wRPw0+JxSJBtiz0KTSdzJoEZWmVpIDplwNWFPrB3mrCFEUIKrAwHGVaw2QiwiEzAAAZ
+        cmnrouSQYQpdsEvQnmMwwyWUYksQaikphHWt9XfYecVMBgY3pLWFT9brfADKsAUBa6UJjKgoh0EZ
+        86tdzI94z4MR3JYEhvYMgcmBCsAW6kDAJQGLsFl18ATSVpUweSz4GeurRhkmj+V6EsEaZYpW821X
+        Bp4eauUpQEVn54BYM/kjjzLFOZ5Y+SeiBI4an1UfCUuCygYG4Zy3zivBBGvrgcuYPYPjtDAtyRA+
+        /vNxZKSTKlT9Qw3RsZNMqH3sEwxLcN5uVU4gYCu0yqG96VFob0hTPLskOBKbfsFOaf13X21HNklv
+        0K78N3/Gb7Tbfhn/RJTwxVNrP/bL/zB4j3DE6Ggy02CT4FoZFcpVuxtTDGwdJqhMTntMx83X5sUP
+        AAAA//8DAK0qY5KVBAAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7be043fc3bba96c3-SJC
+      - 7bfe3f5edbd9fac2-SJC
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -210,11 +291,9 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Apr 2023 16:40:20 GMT
+      - Sun, 30 Apr 2023 08:00:00 GMT
       Server:
       - cloudflare
-      Transfer-Encoding:
-      - chunked
       access-control-allow-origin:
       - '*'
       alt-svc:
@@ -224,19 +303,25 @@ interactions:
       openai-organization:
       - user-adtx4fhfg1qsiyzdoaxciooj
       openai-processing-ms:
-      - '15127'
+      - '10898'
       openai-version:
       - '2020-10-01'
       strict-transport-security:
       - max-age=15724800; includeSubDomains
       x-ratelimit-limit-requests:
       - '3500'
+      x-ratelimit-limit-tokens:
+      - '90000'
       x-ratelimit-remaining-requests:
       - '3499'
+      x-ratelimit-remaining-tokens:
+      - '86482'
       x-ratelimit-reset-requests:
       - 17ms
+      x-ratelimit-reset-tokens:
+      - 2.345s
       x-request-id:
-      - 468c3c77efd74e3a2d396ef6033a5602
+      - f294799d2564196ef4852c84fdc8fb17
     status:
       code: 200
       message: OK
